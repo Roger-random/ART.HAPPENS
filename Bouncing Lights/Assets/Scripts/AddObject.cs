@@ -6,6 +6,7 @@ public class AddObject : MonoBehaviour
 {
     public GameObject objectToAdd;
     public float timeInterval;
+    public float timeToFirstAdd;
 
     private float timeSeconds;
     private float timeLastGen;
@@ -15,7 +16,6 @@ public class AddObject : MonoBehaviour
     {
         timeSeconds = 0;
         timeLastGen = 0;
-        Add();
     }
 
     // Update is called once per frame
@@ -23,7 +23,7 @@ public class AddObject : MonoBehaviour
     {
         timeSeconds += Time.deltaTime;
 
-        if (timeSeconds > timeLastGen + timeInterval)
+        if (timeSeconds > timeToFirstAdd && timeSeconds > timeLastGen + timeInterval)
         {
             Add();
         }
