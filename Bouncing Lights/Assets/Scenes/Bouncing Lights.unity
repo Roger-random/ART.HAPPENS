@@ -228,11 +228,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c4f6425153d552459a16709dd70bd73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerControls: {fileID: -944628639613478452, guid: c3cd6f013b295514bbf95f5f64f240c9,
+    type: 3}
   fireAction:
     m_Name: Fire
     m_Type: 0
     m_ExpectedControlType: 
     m_Id: 4693a74f-0795-4efe-b1e8-8954d0db75ef
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+  tiltAction:
+    m_Name: Tilt
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 2d1ee270-88ea-40a0-a2e8-3c03cd276e61
     m_Processors: 
     m_Interactions: 
     m_SingletonActionBindings: []
@@ -384,14 +394,6 @@ MonoBehaviour:
   objectToAdd: {fileID: 7549988044022627118, guid: 3c4f6ca4b23033545ad64f7333e1346f,
     type: 3}
   timeInterval: 1
-  fireAction:
-    m_Name: Fire
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 7229a58d-d408-40a7-9890-330c44e0f417
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
 --- !u!4 &1226230686
 Transform:
   m_ObjectHideFlags: 0
