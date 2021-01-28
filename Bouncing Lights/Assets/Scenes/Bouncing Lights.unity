@@ -347,8 +347,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 12
-  m_fontSizeBase: 12
+  m_fontSize: 6
+  m_fontSizeBase: 6
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -446,7 +446,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 881858829}
   m_LocalRotation: {x: 0.2588191, y: 0, z: 0, w: 0.9659258}
-  m_LocalPosition: {x: 0, y: 0, z: -8.29}
+  m_LocalPosition: {x: 0, y: 0, z: -9.18}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -454,7 +454,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 30, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 1.41}
+  m_AnchoredPosition: {x: 0, y: 0.66}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &881858834
@@ -469,10 +469,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7349040191cfce43aae3a3cd4bb8bfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flySpeed: 10
-  startPosition: {x: 0, y: 1.41, z: -8.29}
-  endPosition: {x: 0, y: 6.25, z: -16.67}
   waitTimeBeforeFlight: 3
+  flightDuration: 0.5
+  endPosition: {x: 0, y: 0.25, z: -15.2}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
