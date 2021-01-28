@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class AddObject : MonoBehaviour
 {
     public GameObject objectToAdd;
-    public float timeInterval;
+    public float timeIntervalMin;
+    public float timeIntervalMax;
     public float timeToFirstAdd;
 
     private float timeSeconds;
@@ -23,9 +25,19 @@ public class AddObject : MonoBehaviour
     {
         timeSeconds += Time.deltaTime;
 
-        if (timeSeconds > timeToFirstAdd && timeSeconds > timeLastGen + timeInterval)
+        if (timeSeconds > timeToFirstAdd)
         {
-            Add();
+            if (Keyboard.current.spaceKey.isPressed &&
+                timeSeconds > timeLastGen + timeIntervalMin)
+            {
+                // Add if space is down, with minimum time between adds.
+                Add();
+            }
+            else if (timeSeconds > timeLastGen + timeIntervalMax)
+            {
+                // If no lights were added within maximum interval, add one.
+                Add();
+            }
         }
     }
 

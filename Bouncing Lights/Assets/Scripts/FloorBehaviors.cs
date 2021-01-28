@@ -6,16 +6,11 @@ using UnityEngine.InputSystem;
 public class FloorBehaviors : MonoBehaviour
 {
     public InputActionAsset playerControls;
-    public InputAction fireAction;
     public InputAction tiltAction;
-    public AddObject refAddObject;
 
     public void Awake()
     {
         InputActionMap inputActionMap = playerControls.FindActionMap("Player");
-
-        fireAction = inputActionMap.FindAction("Fire");
-        fireAction.performed += FireAction_performed;
 
         tiltAction = inputActionMap.FindAction("Move");
         tiltAction.performed += TiltAction_performed;
@@ -43,18 +38,13 @@ public class FloorBehaviors : MonoBehaviour
         }
     }
 
-    private void FireAction_performed(InputAction.CallbackContext obj)
-    {
-        refAddObject.Add();
-    }
-
     public void OnEnable()
     {
-        fireAction.Enable();
+        tiltAction.Enable();
     }
 
     public void OnDisable()
     {
-        fireAction.Disable();
+        tiltAction.Disable();
     }
 }
