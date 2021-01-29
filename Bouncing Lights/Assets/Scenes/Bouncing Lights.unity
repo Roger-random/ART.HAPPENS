@@ -1231,6 +1231,8 @@ GameObject:
   - component: {fileID: 2055780296}
   - component: {fileID: 2055780295}
   - component: {fileID: 2055780294}
+  - component: {fileID: 2055780299}
+  - component: {fileID: 2055780298}
   m_Layer: 0
   m_Name: by Roger Cheng
   m_TagString: Untagged
@@ -1397,6 +1399,59 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -1.97}
   m_SizeDelta: {x: 3, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2055780298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2055780293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: c3cd6f013b295514bbf95f5f64f240c9,
+    type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: UI
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
+--- !u!114 &2055780299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2055780293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aca66b0d32425d45a8bcdc4cdfead80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uiControls: {fileID: -944628639613478452, guid: c3cd6f013b295514bbf95f5f64f240c9,
+    type: 3}
+  clickAction:
+    m_Name: Click
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 4801be1b-1111-45de-9c6b-8266d2b4b81f
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
 --- !u!1001 &2064383754
 PrefabInstance:
   m_ObjectHideFlags: 0
