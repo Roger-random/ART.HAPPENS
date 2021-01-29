@@ -1,7 +1,7 @@
 {
 "companyName": "Regorlas",
-"productName": "Bouncing Lights",
-"productVersion": "0.1",
+"productName": "Bouncy Bouncy Lights",
+"productVersion": "1.0",
 "dataUrl": "bouncinglights.data.unityweb",
 "wasmCodeUrl": "bouncinglights.wasm.code.unityweb",
 "wasmFrameworkUrl": "bouncinglights.wasm.framework.unityweb",
