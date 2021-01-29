@@ -38,6 +38,12 @@ public class AddObject : MonoBehaviour
                 // If no lights were added within maximum interval, add one.
                 Add();
             }
+            else if (Keyboard.current.tabKey.isPressed)
+            {
+                // Tab is undocumented key to bypass limitation on add rate
+                // Causes utter pandemonium, might even cause crash?
+                Add();
+            }
         }
     }
 
