@@ -1,7 +1,7 @@
 {
 "companyName": "Roger Cheng",
 "productName": "Bouncy Bouncy Lights",
-"productVersion": "1.0",
+"productVersion": "1.1",
 "dataUrl": "bouncinglights.data.unityweb",
 "wasmCodeUrl": "bouncinglights.wasm.code.unityweb",
 "wasmFrameworkUrl": "bouncinglights.wasm.framework.unityweb",
@@ -12,5 +12,5 @@
 "cacheControl": {"default": "must-revalidate"},
 "developmentBuild": false,
 "multithreading": false,
-"unityVersion": "2019.4.18f1"
+"unityVersion": "2019.4.19f1"
 }
